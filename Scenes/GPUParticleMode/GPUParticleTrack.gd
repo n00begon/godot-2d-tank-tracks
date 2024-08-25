@@ -1,0 +1,2 @@
+class_name GPUParticleTrack
+extends GPUParticles2D

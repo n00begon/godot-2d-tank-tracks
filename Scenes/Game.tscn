@@ -22,5 +22,16 @@ text = "Sprite Mode"
 layout_mode = 2
 text = "Line Mode"
 
+[node name="CPUParticleButton" type="Button" parent="CanvasLayer/HBoxContainer"]
+layout_mode = 2
+text = "CPU Particle Mode"
+
+[node name="GPUParticleButton" type="Button" parent="CanvasLayer/HBoxContainer"]
+layout_mode = 2
+text = "GPU Particle Mode
+"
+
 [connection signal="pressed" from="CanvasLayer/HBoxContainer/SpriteButton" to="." method="_on_sprite_button_pressed"]
 [connection signal="pressed" from="CanvasLayer/HBoxContainer/LineButton" to="." method="_on_line_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/HBoxContainer/CPUParticleButton" to="." method="_on_cpu_particle_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/HBoxContainer/GPUParticleButton" to="." method="_on_gpu_particle_button_pressed"]

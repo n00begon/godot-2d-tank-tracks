@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://dh1ecgvr2yywb"]
+
+[ext_resource type="Script" path="res://Scenes/CPUParticleMode/CPUParticleTank.gd" id="1_5l24s"]
+[ext_resource type="Texture2D" uid="uid://biejw46gtp774" path="res://Assets/tank_red.png" id="1_ega7j"]
+[ext_resource type="PackedScene" uid="uid://cnrrr8xhs7gcf" path="res://Scenes/CPUParticleMode/CPUParticleTrack.tscn" id="2_ssr8b"]
+
+[node name="CPUParticleTank" type="CharacterBody2D"]
+script = ExtResource("1_5l24s")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = 1
+texture = ExtResource("1_ega7j")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="CPUParticleTrack" parent="." instance=ExtResource("2_ssr8b")]
+amount = 40

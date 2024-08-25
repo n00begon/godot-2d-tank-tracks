@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://cih8hyaqdume1"]
+
+[ext_resource type="Script" path="res://Scenes/GPUParticleMode/GPUParticleTank.gd" id="1_ci5e2"]
+[ext_resource type="Texture2D" uid="uid://bi7rshab7pq7" path="res://Assets/tank_sand.png" id="2_fyjre"]
+[ext_resource type="PackedScene" uid="uid://bir4cs2688xnn" path="res://Scenes/GPUParticleMode/GPUParticleTracks.tscn" id="3_dx43f"]
+
+[node name="ParticleTank" type="CharacterBody2D"]
+script = ExtResource("1_ci5e2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = 1
+texture = ExtResource("2_fyjre")
+
+[node name="GPUParticleTracks" parent="." instance=ExtResource("3_dx43f")]
+
+[node name="Camera2D" type="Camera2D" parent="."]

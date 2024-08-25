@@ -15,7 +15,7 @@ func _ready() -> void:
 		get_tree().root.add_child.call_deferred(track)
 
 func moved(distance: float) -> void:
-	moveDistance  += distance
+	moveDistance += distance
 	if moveDistance > gap:
 		moveDistance -= gap
 		place()
