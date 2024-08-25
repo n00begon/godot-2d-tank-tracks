@@ -1,10 +1,9 @@
 class_name SpriteTracks
 extends Node2D
 
-@export var gap: float = 50
+@export var gap: float = 48 #64 Full step 32 Half Step
 var moveDistance: float = 0
 var trackResource: PackedScene = preload("res://Scenes/SpriteMode/SpriteTrack.tscn")
-var count: float = 0
 var tracks: Array[SpriteTrack] = []
 var current: int = 0
 
