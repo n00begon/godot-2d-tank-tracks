@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://dbvpf43mrqlsf"]
+
+[ext_resource type="Script" path="res://Scenes/LineMode/LineTank.gd" id="1_6egtd"]
+[ext_resource type="Texture2D" uid="uid://yke87gqqsna8" path="res://Assets/tank_green.png" id="2_okt62"]
+[ext_resource type="PackedScene" uid="uid://xdn5rjhlaysv" path="res://Scenes/LineMode/LineTrack.tscn" id="3_cfmc6"]
+
+[node name="LineTank" type="CharacterBody2D"]
+script = ExtResource("1_6egtd")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = 1
+texture = ExtResource("2_okt62")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="LineTrack" parent="." instance=ExtResource("3_cfmc6")]

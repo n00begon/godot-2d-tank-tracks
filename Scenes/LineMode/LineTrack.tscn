@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://xdn5rjhlaysv"]
+
+[ext_resource type="Texture2D" uid="uid://co73f7bpxpv6a" path="res://Assets/tracksLarge.png" id="1_26sxf"]
+[ext_resource type="Script" path="res://Scenes/LineMode/LineTrack.gd" id="1_s2q2o"]
+
+[sub_resource type="Gradient" id="Gradient_g8dhy"]
+colors = PackedColorArray(0, 0, 0, 0, 1, 1, 1, 1)
+
+[node name="LineTrack" type="Line2D"]
+width = 82.0
+default_color = Color(0, 0, 0, 1)
+gradient = SubResource("Gradient_g8dhy")
+texture = ExtResource("1_26sxf")
+texture_mode = 1
+script = ExtResource("1_s2q2o")
