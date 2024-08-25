@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dtgeki2hrk73d"]
+
+[ext_resource type="Script" path="res://Scenes/SpriteMode/SpriteTracks.gd" id="1_jbbde"]
+
+[node name="SpriteTracks" type="Node2D"]
+script = ExtResource("1_jbbde")

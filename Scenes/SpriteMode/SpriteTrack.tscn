@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://cikku2aybulhp"]
+
+[ext_resource type="Texture2D" uid="uid://co73f7bpxpv6a" path="res://Assets/tracksLarge.png" id="1_6gw8p"]
+[ext_resource type="Script" path="res://Scenes/SpriteMode/SpriteTrack.gd" id="1_tij4r"]
+
+[node name="SpriteTrack" type="Sprite2D"]
+texture = ExtResource("1_6gw8p")
+script = ExtResource("1_tij4r")
