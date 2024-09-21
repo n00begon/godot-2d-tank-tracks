@@ -14,4 +14,4 @@ texture = ExtResource("1_ega7j")
 [node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="CPUParticleTrack" parent="." instance=ExtResource("2_ssr8b")]
-amount = 40
+amount = 84
