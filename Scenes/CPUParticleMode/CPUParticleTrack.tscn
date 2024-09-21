@@ -6,8 +6,8 @@
 colors = PackedColorArray(0, 0, 0, 1, 1, 1, 1, 0)
 
 [node name="CPUParticleTrack" type="CPUParticles2D"]
-amount = 10
-lifetime = 10.0
+amount = 80
+lifetime = 20.0
 texture = ExtResource("1_5vhuj")
 particle_flag_align_y = true
 direction = Vector2(0, 0)

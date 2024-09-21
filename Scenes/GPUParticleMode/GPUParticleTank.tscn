@@ -1,32 +1,13 @@
-[gd_scene load_steps=7 format=3 uid="uid://b3b607ptf8ums"]
+[gd_scene load_steps=3 format=3 uid="uid://b3b607ptf8ums"]
 
 [ext_resource type="Script" path="res://Scenes/GPUParticleMode/GPUParticleTank.gd" id="1_o4mwi"]
-[ext_resource type="Texture2D" uid="uid://co73f7bpxpv6a" path="res://Assets/tracksLarge.png" id="2_ipke4"]
 [ext_resource type="Texture2D" uid="uid://bi7rshab7pq7" path="res://Assets/tank_sand.png" id="3_1wtrd"]
-
-[sub_resource type="Curve" id="Curve_r2spr"]
-_data = [Vector2(0, 1), 0.0, -0.354651, 0, 0, Vector2(0.995516, 0.00371754), -2.4633, 0.0, 0, 0]
-point_count = 2
-
-[sub_resource type="CurveTexture" id="CurveTexture_brss6"]
-curve = SubResource("Curve_r2spr")
-
-[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_cfx5w"]
-gravity = Vector3(0, 0, 0)
-attractor_interaction_enabled = false
-alpha_curve = SubResource("CurveTexture_brss6")
 
 [node name="GPUParticleTank" type="CharacterBody2D"]
 script = ExtResource("1_o4mwi")
 
-[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
-amount = 40
-process_material = SubResource("ParticleProcessMaterial_cfx5w")
-texture = ExtResource("2_ipke4")
-lifetime = 10.0
-visibility_rect = Rect2(-1000, -1000, 2000, 2000)
-
 [node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = 2
 texture = ExtResource("3_1wtrd")
 
 [node name="Camera2D" type="Camera2D" parent="."]

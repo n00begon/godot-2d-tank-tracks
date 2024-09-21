@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://bxwwnvbaegska"]
+[gd_scene load_steps=3 format=3 uid="uid://bxwwnvbaegska"]
 
 [ext_resource type="Script" path="res://Scenes/SpriteMode/SpriteTank.gd" id="1_8qjnx"]
 [ext_resource type="Texture2D" uid="uid://bxeesf81cfld" path="res://Assets/tank_blue.png" id="2_bi3u2"]
-[ext_resource type="PackedScene" uid="uid://dtgeki2hrk73d" path="res://Scenes/SpriteMode/SpriteTracks.tscn" id="3_ycmay"]
 
 [node name="SpriteTank" type="CharacterBody2D"]
 z_index = 1
@@ -12,5 +11,3 @@ script = ExtResource("1_8qjnx")
 texture = ExtResource("2_bi3u2")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-
-[node name="SpriteTracks" parent="." instance=ExtResource("3_ycmay")]

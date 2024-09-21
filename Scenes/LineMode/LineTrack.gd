@@ -1,7 +1,7 @@
 class_name LineTrack
 extends Line2D
 
-const MAX_POINTS: int = 50
+const MAX_POINTS: int = 200
 @export var gap: float = 64
 var moveDistance: float = 0
 var parent: Node2D

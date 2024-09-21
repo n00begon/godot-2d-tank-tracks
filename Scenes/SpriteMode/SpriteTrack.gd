@@ -2,7 +2,7 @@ class_name SpriteTrack
 extends Sprite2D
 
 var startAlpha: float = 1
-var fadeSpeed: float = startAlpha/10
+var fadeSpeed: float = startAlpha/20
 
 func _ready() -> void:
 	visible = false
